@@ -1,0 +1,12 @@
+package testprj_01;
+
+class hello{
+
+	public static void main(String[] args){
+		System.out.println(moji("hello"));
+	}
+
+	public static int moji(String moji){
+		return moji.length();
+	}
+}

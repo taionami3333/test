@@ -1,0 +1,13 @@
+package testprj_01;
+
+class hello{
+
+	public static void main(String[] args){
+		System.out.println(goukei2("hello"));
+	}
+
+	public static String moji(String moji){
+		arr = moji.length();
+		return arr;
+	}
+}

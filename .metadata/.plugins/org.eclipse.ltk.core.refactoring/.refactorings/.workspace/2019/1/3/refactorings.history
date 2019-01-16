@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース &apos;list&apos; を削除" deleteContents="false" description="リソース &apos;list&apos; を削除" element1="/list" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1547602429573"/>
+</session>

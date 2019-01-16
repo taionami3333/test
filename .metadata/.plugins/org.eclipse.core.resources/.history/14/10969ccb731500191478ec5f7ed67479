@@ -1,0 +1,14 @@
+package testprj_01;
+
+public class hello {
+	public static void main(String[] args) {
+		int value = totalPrice(3);
+		System.out.println();
+	}
+
+	public static totalPrice(int ninzu){
+		int total_value;
+		total_value = ninzu * 500;
+		return total_value;
+	}
+}
