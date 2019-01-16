@@ -11,6 +11,5 @@ public class Test {
 		System.out.println(nobody.age);
 		System.out.println(hanako.name);
 		System.out.println(hanako.age);
-
 	}
 }
