@@ -7,3 +7,7 @@ create table test_table(
   user_name varchar(50),
   password varchar(50)
 );
+
+insert into test_table values(1, "taro","123");
+insert into test_table values(2, "jiro", "456");
+insert into test_table values(3, "hanako", "789");

@@ -63,8 +63,8 @@ public class TestUserDAO {
 			ps.setString(1, name);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				System.out.println("user_name");
-				System.out.println("password");
+				System.out.println(rs.getString("user_name"));
+				System.out.println(rs.getString("password"));
 			}
 		} catch (SQLException e){
 			e.printStackTrace();
