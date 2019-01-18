@@ -4171,3 +4171,9 @@ org.osgi.framework.BundleException: Unable to acquire the state change lock for 
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-01-18 13:27:04.269
 !MESSAGE ローカル・ホスト での Tomcat8 (Java8) (2) で必要な幾つかのポート (8005, 8080, 8009) がすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-01-18 15:58:51.557
+!MESSAGE ローカル・ホスト での Tomcat8 (Java8) (2) で必要な幾つかのポート (8005, 8080, 8009) がすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+
+!ENTRY org.eclipse.wst.server.core 4 0 2019-01-18 16:03:38.195
+!MESSAGE C:\Users\internousdev\Desktop\workspace\workspace-minamiyama\test\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\login\WEB-INF を削除できませんでした。他のプロセスによりロックされている可能性があります。
