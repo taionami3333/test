@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,7 +36,7 @@ public class MySQLServlet extends HttpServlet {
 		out.println("<body>");
 
 		Connection conn = null;
-		String url = "jdbc:,mysql://localhost/testdb";
+		String url = "jdbc:mysql://localhost/testdb";
 		String user = "root";
 		String password = "mysql";
 
@@ -45,7 +46,7 @@ public class MySQLServlet extends HttpServlet {
 
 			Statement stmt = conn.createStatement();
 			String sql = "SELECT * FROM test_table";
-			ResultSet rs = stmt.exctuteQuery(sql);
+			ResultSet rs = stmt.executeQuery(sql);
 
 			while(rs.next()){
 				int userId = rs.getInt("user_id");
@@ -61,6 +62,8 @@ public class MySQLServlet extends HttpServlet {
 			out.println("ClassNotFoundException" + e.getMessage());
 		}catch (SQLException e){
 			out.println("SQLException:" + e.getMessage());
+		}catch (Exception e){
+			out.println("Exception:" + e.getMessage());
 		}finally{
 			try{
 				if(conn != null){

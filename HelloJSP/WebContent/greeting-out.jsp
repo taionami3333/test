@@ -8,6 +8,6 @@
 </head>
 <body>
  <% request.setCharacterEncoding("UTF-8"); %>
-<p><%=request.getParameter("user") %></p>
+<p>こんにちは！　<%=request.getParameter("user") %>さん！</p>
 </body>
 </html>
