@@ -70,6 +70,10 @@
 		<table>
 			<s:form action="UserCreateCompleteAction">
 			<tr id="box">
+				<td><label>ログインID:</label></td>
+				<td><s:property value="loginUserId" escape="false" /></td>
+			</tr>
+			<tr id="box">
 				<td><label>ログインPASS:</label></td>
 				<td><s:property value="loginPassword" escape="false" /></td>
 			</tr>

@@ -1,0 +1,11 @@
+package com.internousdev.ec2.util;
+
+public class DBConnector {
+	private String dbdriver = "com.mysql.jdbc.Driver";;
+	private String url = "jdbc:mysql://localhost/ecsite";
+	private String user = "root";
+	private String password = "mysql";
+
+
+
+}

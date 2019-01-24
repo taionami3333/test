@@ -1,0 +1,25 @@
+package com.internousdev.ec2.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+public class PageAction extends ActionSupport implements SessionAware{
+
+	private String itemName;
+	private String itemBrand;
+	private String itemMessage;
+	private String mainCategory;
+	private String subCategory;
+	private String miniCategory;
+	private int itemPrice;
+	private int itemStock;
+	private int id;
+	private Map<String, Object> session;
+
+	public String execute(){
+
+	}
+
+}

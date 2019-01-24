@@ -31,21 +31,21 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		return loginUserId;
 	}
 	public void setLoginUserId(String loginUserId){
-		this.loginUserId = loginUserId;
+		this.loginUserId=loginUserId;
 	}
 
 	public String getLoginPassword(){
 		return loginPassword;
 	}
 	public void setLoginPassword(String loginPassword){
-		this.loginPassword = loginPassword;
+		this.loginPassword=loginPassword;
 	}
 
 	public String getUserName(){
 		return userName;
 	}
 	public void setUserName(String userName){
-		this.userName = userName;
+		this.userName=userName;
 	}
 
 	public Map<String, Object> getSession(){
@@ -53,12 +53,12 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	}
 	@Override
 	public void setSession(Map<String, Object> session){
-		this.session = session;
+		this.session=session;
 	}
 	public String getErrorMessage(){
 		return errorMessage;
 	}
 	public void setErrorMessage(String errorMessage){
-		this.errorMessage = errorMessage;
+		this.errorMessage=errorMessage;
 	}
 }

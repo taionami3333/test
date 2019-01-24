@@ -1,0 +1,9 @@
+package com.internousdev.ec2.util;
+
+public class DBConnector {
+	private String DB = "ecsite";
+	private String Url = "jdbc://localhost/ecsite";
+	private String Password = "mysql";
+
+
+}

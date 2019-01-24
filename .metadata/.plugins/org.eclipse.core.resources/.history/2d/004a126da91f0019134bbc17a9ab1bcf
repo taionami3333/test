@@ -1,0 +1,49 @@
+package com.internousdev.ec2.dto;
+
+public class PageDTO {
+
+	private String itemName;
+	private String itemBrand;
+	private String itemMessage;
+	private String mainCategory;
+	private String subCategory;
+	private String miniCategory;
+	private int itemPrice;
+	private int itemStock;
+
+	public String getItemName(){
+		return itemName;
+	}
+	public void setItemName(String ltemName){
+		this.itemName = itemName;
+	}
+
+	public String getItemBrand(){
+		return itemBrand;
+	}
+	public void setItemBrand(String ltemBrand){
+		this.itemBrand = itemBrand;
+	}
+
+	public String getItemMessage(){
+		return itemMessage;
+	}
+	public void setItemMessage(String ltemMessage){
+		this.itemMessage = itemMessage;
+	}
+
+	public String getMainCategory(){
+		return mainCategory;
+	}
+	public void setMainCategory(String MainCategory){
+		this.mainCategory = mainCategory;
+	}
+
+	public String getItemName(){
+		return itemName;
+	}
+	public void setItemName(String ltemName){
+		this.itemName = itemName;
+	}
+
+}

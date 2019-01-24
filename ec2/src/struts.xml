@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true"/>
+<package name="com.internousdev.ec2.action" extends="struts-default">
+
+<action name="PageDetailAction" class="com.internousdev.ec2.action.PageDetailAction" method="execute">
+<result name="success">page.jsp</result>
+</action>
+
+<action name="PageAction" class="com.internousdev.ec2.action.PageAction" method="execute">
+<result name="success">index.jsp</result>
+</action>
+
+</package>
+</struts>

@@ -1,0 +1,23 @@
+package com.internousdev.ec2.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
+import com.internousdev.ec2.util.DBConnector;
+import com.internousdev.ec2.dto.PageDTO;
+
+public class PageDAO {
+
+	public PageDTO getIteminfo(){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		PageDTO pageDTO = new PageDTO();
+
+		String sql = "SELECT "
+				+ "id, item_name, item_brand, item_message,"
+				+ "item_main_category, item_sub_category, item_mini_category,"
+				+ "item_price, item_stock FROM item_info_transaction"
+	}
+
+}

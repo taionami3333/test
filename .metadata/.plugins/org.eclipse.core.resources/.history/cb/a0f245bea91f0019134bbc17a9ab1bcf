@@ -1,0 +1,10 @@
+package com.internousdev.ec2.dao;
+
+import java.sql.*;
+import java.util.*;
+import com.internousdev.ec2.util.*;
+import com.internousdev.ec2.dto.*;
+
+public class PageDAO {
+
+}
