@@ -26,8 +26,9 @@
 </style>
 </head>
 <body>
-<s:form action="PageDetailAction">
-	<s:submit value="page"/>
-</s:form>
+	<s:form action="PageDetailAction">
+		<s:submit value="page"/>
+    </s:form>
+
 </body>
 </html>

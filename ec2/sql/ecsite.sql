@@ -21,12 +21,17 @@ create table item_info_transaction(
 id int not null primary key auto_increment,
 item_name varchar(60),
 item_brand varchar(30),
+item_about varchar(60),
+item_country varchar(30),
+item_material varchar(60),
+item_option varchar(60),
 item_message varchar(255),
 item_main_category varchar(30),
 item_sub_category varchar(30),
 item_mini_category varchar(30),
 item_price int,
 item_stock int,
+item_coupon_code boolean,
 insert_date datetime,
 update_date datetime
 );
@@ -44,9 +49,9 @@ insert_date datetime,
 delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name, item_brand, item_message, item_main_category, item_sub_category, item_mini_category, item_price, item_stock)
-VALUES("ツバメノート ノート A5 横罫 7mm×24行 100枚 H100S H2006","ツバメノート","A5ノート、横罫、100枚。100枚綴りという書きごたえのあるノート。A5判なのでバックにも入れやすい。最初のページにはインデックスが付いている。本文は罫引き印刷を採用。水性インクで罫を引いているので、万年筆との相性も良い。
-職人が丹精込めて作ったノートを存分にお使いください。製造工程上、ノートの天地が5ミリ小さく205mmになっております。ご注意ください。","文房具オフィス用品", "文具・学用品", "ノート", 400,150);
-INSERT INTO item_info_transaction(item_name, item_brand, item_message, item_main_category, item_sub_category, item_mini_category, item_price, item_stock)
-VALUES("ライフ ノーブル レポート 方眼 A4 R60","ライフ","ライフの創業から続くものづくりの理念が凝縮したノーブルシリーズ。滑らかな書き心地の本文用紙は、製造段階から品質を指示して抄造したオリジナルペーパーを使用。","文房具オフィス用品", "文具・学用品", "ノート", 972,150);
+INSERT INTO item_info_transaction(item_name, item_brand, item_about, item_country, item_material, item_option, item_message, item_main_category, item_sub_category, item_mini_category, item_price, item_stock, item_coupon_code)
+VALUES("ツバメノート ノート A5 横罫 7mm×24行 100枚 H100S H2006","ツバメノート","7mm×24行 100枚","日本","フールス紙","インデックス付","A5ノート、横罫、100枚。100枚綴りという書きごたえのあるノート。A5判なのでバックにも入れやすい。最初のページにはインデックスが付いている。本文は罫引き印刷を採用。水性インクで罫を引いているので、万年筆との相性も良い。
+職人が丹精込めて作ったノートを存分にお使いください。製造工程上、ノートの天地が5ミリ小さく205mmになっております。ご注意ください。","文房具オフィス用品", "文具・学用品", "ノート", 400,150, true);
+INSERT INTO item_info_transaction(item_name, item_brand, item_about, item_country, item_material, item_option, item_message, item_main_category, item_sub_category, item_mini_category, item_price, item_stock, item_coupon_code)
+VALUES("ライフ ノーブル レポート 方眼 A4 R60","ライフ","7mm×24行 60枚","日本","フールス紙","インデックス付","ライフの創業から続くものづくりの理念が凝縮したノーブルシリーズ。滑らかな書き心地の本文用紙は、製造段階から品質を指示して抄造したオリジナルペーパーを使用。","文房具オフィス用品", "文具・学用品", "ノート", 972,150, false);
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous","internous01","test");

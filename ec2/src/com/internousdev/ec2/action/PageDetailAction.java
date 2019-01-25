@@ -10,18 +10,6 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class PageDetailAction extends ActionSupport implements SessionAware{
 
-/*	private String itemName;
-	private String itemBrand;
-	private String itemMessage;
-	private String mainCategory;
-	private String subCategory;
-	private String miniCategory;
-	private int itemPrice;
-	private int itemStock;
-	private int id;
-	private Map<String, Object> session;
-	*/
-
 	private String result;
 	private Map<String, Object> session;
 
@@ -33,15 +21,22 @@ public class PageDetailAction extends ActionSupport implements SessionAware{
 		session.put("id", pageDTO.getId());
 		session.put("item_name", pageDTO.getItemName());
 		session.put("item_brand", pageDTO.getItemBrand());
+		session.put("item_about", pageDTO.getItemAbout());
+		session.put("item_country", pageDTO.getItemCountry());
+		session.put("item_material", pageDTO.getItemMaterial());
+		session.put("item_option", pageDTO.getItemOption());
 		session.put("item_message", pageDTO.getItemMessage());
 		session.put("item_main_category", pageDTO.getMainCategory());
 		session.put("item_sub_category", pageDTO.getSubCategory());
 		session.put("item_mini_category", pageDTO.getMiniCategory());
 		session.put("item_price", pageDTO.getItemPrice());
 		session.put("item_stock", pageDTO.getItemStock());
+		session.put("item_coupon_code", pageDTO.isItemCouponCode()).toString();
 
 		return result;
 	}
+
+
 
 	public Map<String,Object> getSession(){
 		return session;
