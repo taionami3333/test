@@ -31,7 +31,7 @@ public class PageDetailAction extends ActionSupport implements SessionAware{
 		session.put("item_mini_category", pageDTO.getMiniCategory());
 		session.put("item_price", pageDTO.getItemPrice());
 		session.put("item_stock", pageDTO.getItemStock());
-		session.put("item_coupon_code", pageDTO.isItemCouponCode()).toString();
+
 
 		return result;
 	}

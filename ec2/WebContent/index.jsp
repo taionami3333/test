@@ -26,6 +26,9 @@
 </style>
 </head>
 <body>
+	<s:form action="PageIndexAction">
+		<s:submit value="pageIndex" />
+	</s:form>
 	<s:form action="PageDetailAction">
 		<s:submit value="page"/>
     </s:form>

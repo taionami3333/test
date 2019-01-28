@@ -1,0 +1,5 @@
+package com.internousdev.ec2.action;
+
+public class PageIndexAction {
+
+}
