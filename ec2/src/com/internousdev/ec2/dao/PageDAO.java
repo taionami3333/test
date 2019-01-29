@@ -9,6 +9,7 @@ import com.internousdev.ec2.util.DBConnector;
 
 public class PageDAO {
 
+
 	public PageDTO getItemInfo(){
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
@@ -41,6 +42,7 @@ public class PageDAO {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		System.out.println(pageDTO);
 		return pageDTO;
 	}
 

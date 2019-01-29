@@ -10,6 +10,7 @@
 
 <action name="PageDetailAction" class="com.internousdev.ec2.action.PageDetailAction" method="execute">
 <result name="success">page.jsp</result>
+<result name="error">pageError.jsp</result>
 </action>
 
 
