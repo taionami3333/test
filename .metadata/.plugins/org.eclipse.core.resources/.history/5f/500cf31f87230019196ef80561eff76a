@@ -1,0 +1,52 @@
+package com.internousdev.testec.action;
+
+import com.opensymphony.xwork2.*;
+import java.util.HashMap;
+
+public class Index extends ActionSupport{
+
+    private HashMap<String,String> msg;
+
+
+
+    public HashMap<String,String> getMsg() {
+
+        return msg;
+
+    }
+
+
+
+    public void setMsg(HashMap<String,String> msg) {
+
+        this.msg = msg;
+
+    }
+
+
+
+    public String execute()
+
+    {
+
+
+
+  	    HashMap<String,String> map = new HashMap<String,String>();
+
+
+
+  	    map.put("english","Hello World");
+
+  	    map.put("japanese","ようこそ世界");
+
+
+
+  	    setMsg(map);
+
+
+
+        return SUCCESS;
+
+    }
+
+}

@@ -29,6 +29,7 @@
 
 <action name="TestAction" class="com.internousdev.webproj4.action.TestAction" method="execute">
 <result name="success">test.jsp</result>
+<result name="error">hello.jsp</result>
 </action>
 </package>
 </struts>

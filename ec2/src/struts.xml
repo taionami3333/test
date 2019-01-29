@@ -13,10 +13,10 @@
 <result name="error">pageError.jsp</result>
 </action>
 
-
 <action name="PageIndexAction" class="com.internousdev.ec2.action.PageIndexAction" method="execute">
 <result name="success">pageIndex.jsp</result>
 </action>
+
 
 </package>
 </struts>

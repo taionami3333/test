@@ -1,0 +1,28 @@
+package com.internousdev.testec.action;
+
+import org.apache.struts2.convention.*;
+
+
+
+public class OrdersController implements ModelDriven<Order> {
+
+    private OrderManager orderManager;
+    private String id;
+    private Order model;
+
+    // Handles /orders/{id} GET requests
+    public HttpHeaders show() {
+        model = orderManager.findOrder(id);
+        return new DefaultHttpHeaders("show")
+            .withETag(model.getUniqueStamp())
+            .lastModified(model.getLastModified());
+    }
+
+    // Handles /orders/{id} PUT requests
+    public String update() {
+        orderManager.updateOrder(model);
+        return "update";
+    }
+
+    // getters and setters
+}

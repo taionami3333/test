@@ -37,8 +37,8 @@
 <tr>
 <td>
 <a href='
-<s:url action="pageDetailAction">
-<s:param name="itemName" value="%{itemName}" />
+<s:url action="PageDetailAction">
+<s:param name="itemname" value="%{itemName}" />
 </s:url>'><s:property value="itemName"/></a>
 </td>
 <td><s:property value="itemBrand"/></td>

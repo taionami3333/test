@@ -1,0 +1,22 @@
+package com.internousdev.testec.action;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+class Info {
+    public String name;
+    public int age;
+}
+
+public class Index {
+	public static void main(String[] args) {
+        String script = "{ \"name\":\"Taro Tanaka\", \"age\":30}";
+
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            Info info = mapper.readValue(script, Info.class);
+            System.out.println(info.name + ", " + info.age);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+}
